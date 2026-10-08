@@ -1,130 +1,95 @@
+# 🎭 Analyse de Sentiments avec le Prompt Engineering
 
-# Sentiment Analysis with Prompt Engineering
+## 📌 Présentation
 
-## 📖 Project Overview
+Ce projet explore l'utilisation du **Prompt Engineering** pour améliorer les performances des modèles de langage (LLM) dans des tâches d'analyse de sentiments.
 
-This project explores how Prompt Engineering techniques can improve the performance of Large Language Models (LLMs) for sentiment analysis tasks.
+L'objectif est d'étudier comment différentes formulations de prompts influencent la capacité d'un modèle à classifier un texte selon son sentiment : **positif**, **négatif** ou **neutre**.
 
-The objective is to analyze and classify text sentiments (Positive, Negative, or Neutral) by designing, testing, and optimizing prompts. The project evaluates the impact of different prompting strategies on the quality and consistency of model responses.
+## 🎯 Objectifs
 
-## 🎯 Objectives
+- Comprendre les bases de l'analyse de sentiments.
+- Expérimenter plusieurs techniques de Prompt Engineering.
+- Comparer les résultats obtenus selon les prompts utilisés.
+- Évaluer l'impact des instructions données au modèle.
+- Identifier les bonnes pratiques pour la conception de prompts efficaces.
 
-- Understand the fundamentals of sentiment analysis.
-- Experiment with Prompt Engineering techniques.
-- Compare different prompt designs and their effectiveness.
-- Analyze model outputs and identify strengths and limitations.
-- Document the impact of prompt modifications on classification results.
-
-## 🛠️ Technologies Used
+## 🛠️ Technologies utilisées
 
 - Python
 - Jupyter Notebook
-- OpenAI / LLM APIs
-- Pandas
-- Matplotlib
-- Prompt Engineering Techniques
+- Intelligence Artificielle Générative
+- Prompt Engineering
+- UV (gestionnaire de dépendances)
 
-## 📂 Project Structure
+## 📂 Structure du projet
 
 ```text
 sma-sentiment-analysis-prompt-engineering/
 │
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── exploratory_analysis.ipynb
-│   └── sentiment_analysis.ipynb
-│
-├── src/
-│   ├── preprocessing.py
-│   ├── prompting.py
-│   └── evaluation.py
-│
-├── results/
-│   ├── figures/
-│   └── reports/
-│
-├── requirements.txt
+├── sa.ipynb          # Expérimentations et analyses
+├── main.py           # Script principal
+├── pyproject.toml    # Dépendances du projet
+├── .gitignore
 └── README.md
 ```
 
 ## ⚙️ Installation
 
-Clone the repository:
+Cloner le dépôt :
 
 ```bash
 git clone https://github.com/Malaak50/sma-sentiment-analysis-prompt-engineering.git
 cd sma-sentiment-analysis-prompt-engineering
 ```
 
-Create a virtual environment:
+Installer les dépendances :
 
 ```bash
-python -m venv .venv
+uv sync
 ```
 
-Activate the environment:
-
-### Windows
-
-```bash
-.venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-source .venv/bin/activate
-```
-
-Install dependencies:
+Ou avec pip :
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## 🚀 Exécution
 
-Run the sentiment analysis workflow:
-
-```bash
-python src/main.py
-```
-
-Or explore the notebooks:
+Lancer le script principal :
 
 ```bash
-jupyter notebook
+python main.py
 ```
 
-## 🧠 Prompt Engineering Approaches
+Ou ouvrir le notebook pour explorer les expérimentations :
 
-The project investigates multiple prompting strategies:
+```bash
+jupyter notebook sa.ipynb
+```
 
-- Zero-shot Prompting
-- Few-shot Prompting
+## 🧠 Techniques de Prompt Engineering étudiées
+
+- Zero-Shot Prompting
+- Few-Shot Prompting
 - Role Prompting
+- Structured Prompting
 - Chain-of-Thought Prompting
-- Structured Output Prompting
 
-Each approach is evaluated to determine its influence on sentiment classification accuracy and response consistency.
+## 📊 Résultats attendus
 
-## 📊 Expected Results
+- Amélioration de la classification des sentiments.
+- Compréhension de l'influence des prompts sur les réponses générées.
+- Comparaison des performances entre différentes stratégies de prompting.
+- Identification des approches les plus efficaces pour l'analyse de sentiments.
 
-- Improved sentiment classification through optimized prompts.
-- Comparative analysis of prompting strategies.
-- Identification of best practices for prompt design.
-- Better understanding of LLM behavior in text classification tasks.
+## 🎓 Compétences développées
 
-## 🎓 Skills Demonstrated
-
-- Natural Language Processing (NLP)
+- Traitement Automatique du Langage Naturel (NLP)
 - Prompt Engineering
-- Data Analysis
-- Python Programming
-- Experimental Evaluation
-- Documentation and Reproducibility
-
+- Expérimentation avec des LLMs
+- Analyse et interprétation de résultats
+- Développement Python
+- Documentation de projets IA
 
